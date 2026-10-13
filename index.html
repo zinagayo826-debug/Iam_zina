@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+
+    <!-- 그 링크 공유하면 보이는거 -->
+  <meta name="robots" content="All">
+  <meta name="Yeti" content="index, follow">
+  <meta name="Yeti" content="All">
+  <meta name="googlebot" content="All">
+  <meta name="googlebot" content="index, follow">
+  <meta name="daum" content="All">
+  <meta name="daum" content="index, follow">
+  <meta name="title" content="portfolio">
+  <meta name="description" content="My Record LOG_zip">
+  <meta name="keywords" content="">
+  <meta name="author" content="백진아">
+  <meta name="content-language" content="kr">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="portfolio">
+  <meta property="og:title" content="portfolio">
+  <meta property="og:description" content="My Record LOG_zip">
+  <meta property="og:image" content="img/thumbnail.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+    <!-- gsap -->
+     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+    <!-- jQuery -->
+     <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+     <script src="js/index.js"></script>
+
+    <!-- 스와이퍼 css -->
+    <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css"
+     />
+     <!-- css -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- 01 intro -->
+    <section id="intro">
+        <!-- 카페라 프레임 -->
+        <div class="kamela_peuleim">
+             <div class="intro_inner">
+                <!-- 데코 왼쪽 -->
+                 <div class="intro_deco deco_left">
+                    <!-- 왼쪽 구름 -->
+                    <svg class="deco_svg cloud_left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 346 174" fill="none">
+                        <path d="M156.086 0.244247C188.055 -2.41493 214.704 16.828 219.72 48.7459C220.87 47.8948 222.051 47.0844 223.259 46.3162C231.409 41.2328 242.101 39.986 251.364 42.2733C260.529 44.5957 268.351 50.5294 273.033 58.7105C279.078 69.1472 278.459 78.3793 275.586 89.4461C282.427 85.4391 290.167 83.2072 298.1 82.9546C310.095 82.4698 321.771 86.8718 330.435 95.1462C339.47 103.658 344.718 115.407 345.015 127.788C345.244 139.689 340.68 151.185 332.338 159.713C326.237 165.854 318.549 170.195 310.124 172.258C301.192 174.369 279.173 173.65 268.951 173.638L203.443 173.551L84.8338 173.596C78.2444 173.6 71.5811 173.77 65.0023 173.629C42.9793 173.155 20.7667 177.973 6.37575 156.562C0.626633 147.858 -1.34405 137.21 0.911599 127.037C3.08565 117.181 9.12967 108.601 17.6963 103.209C29.2664 96.0702 39.9238 96.5347 52.4408 99.5089C58.0296 72.1537 78.1599 57.1395 106.226 61.1037C105.684 27.8632 123.729 6.94342 156.086 0.244247Z" fill="#4A598E"/>
+                    </svg>
+                    <!-- 달 -->
+                    <img src="img/intro_moon.svg" alt="달" class="moon">
+                 </div>
+
+                 <!-- 중앙 타이틀 -->
+                  <div class="intro_title">
+                    <p class="sub_title">[My Creative Space]</p>
+                    <div class="record_box">
+                        <!-- 타이틀 -->
+                        <img src="img/record.png" alt="타이틀이미지">
+                        <!-- 핸들러 포인트 -->
+                        <span class="handle h_oa"></span>
+                        <span class="handle h_ob"></span>
+                        <span class="handle h_oc"></span>
+                        <span class="handle h_od"></span>
+                        <span class="handle h_oe"></span>
+                        <span class="handle h_of"></span>
+                        <span class="handle h_og"></span>
+                        <span class="handle h_oh"></span>
+                    </div>
+                    <h1 class="logzip">LOG_zip</h1>
+                  </div>
+
+                 <!-- 데코 오른쪽 -->
+                 <div class="intro_deco deco_right">
+                    <!-- 별 -->
+                    <div class="star">
+                        <img src="img/star_white.svg" alt="작은별" class="star_oa">
+                        <img src="img/star_white.svg" alt="큰별" class="star_ob">
+                    </div>
+                    <!-- 오른쪽 구름 -->
+                    <svg class="deco_svg cloud_right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 314 159" fill="none">
+                        <path d="M142.051 0.223481C171.146 -2.20961 195.399 15.3972 199.963 44.6013C201.01 43.8226 202.084 43.0811 203.184 42.3782C210.602 37.7271 220.332 36.5862 228.762 38.6791C237.103 40.804 244.221 46.2332 248.482 53.7187C253.984 63.268 253.42 71.7152 250.806 81.8411C257.032 78.1747 264.076 76.1326 271.296 75.9015C282.212 75.4579 292.838 79.4856 300.723 87.0564C308.945 94.8442 313.722 105.595 313.993 116.923C314.201 127.812 310.047 138.331 302.455 146.134C296.902 151.752 289.906 155.725 282.238 157.612C274.11 159.543 254.071 158.885 244.768 158.874L185.15 158.795L77.2058 158.836C71.2089 158.84 65.1447 158.996 59.1574 158.866C39.1147 158.433 18.8994 162.841 5.80246 143.251C0.570288 135.287 -1.2232 125.544 0.82963 116.236C2.80819 107.218 8.30875 99.367 16.1051 94.4334C26.6348 87.9019 36.334 88.3269 47.7255 91.0483C52.8117 66.0189 71.1319 52.2813 96.6746 55.9084C96.1808 25.4942 112.603 6.35306 142.051 0.223481Z" fill="#5F82D1"/>
+                    </svg>
+                 </div>
+             </div>
+             
+            <!-- 카메라 프레임 -->
+            <!-- 왼상단 -->
+            <div class="peuleim_line topleft">
+                <img src="img/intor_battery.gif" alt="배터리">
+                <span></span>
+                <span></span>
+            </div>
+            <!-- 오른상단 -->
+            <div class="peuleim_line topright">
+                <p>REC</p>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- 왼아래 -->
+            <div class="peuleim_line bottomleft">
+                <p>60 fps<br>1920 x 1080</p>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- 오른아래 -->
+            <div class="peuleim_line bottomright">
+                <p>95:08:26</p>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 02 aboutme -->
+    <section id="aboutme">
+        <!-- 별_왼쪽 -->
+        <div class="star left_star">
+            <img src="img/Star_yellow.svg" alt="큰별" class="star_ob">
+            <img src="img/Star_yellow.svg" alt="작은별" class="star_oa">
+        </div>
+        <!-- 별 오른쪽 -->
+        <div class="star right_star">
+            <img src="img/Star_yellow.svg" alt="큰별" class="star_ob">
+            <img src="img/Star_yellow.svg" alt="작은별" class="star_oa">
+        </div>
+        <div class="inner">
+
+            <div class="ic_card">
+                <img src="img/ic_card.png" alt="프로필">
+            </div>
+            <div class="profile">
+                <div class="sketch">
+                    <h2>Sketch View, Code Life.</h2>
+                    <p>밤을 지나 아침으로 흐르는 하늘처럼 트렌드를 읽고 기록하는<br>디자이너 백진아입니다. 하나의 작업물이 완성되는 여정을 담은<br><b>저의 Log_zip에 오신 것을 환영합니다.</b></p>
+                </div>
+                <div class="profile_record">
+                    <div class="education">
+                        <h4>Education</h4>
+                        <p>
+                            기업요구 AI기반 UIUX 반응형 <br class="respon">실무<br class="pcver">양성과정 수료
+                            <span>2026.10 ㅣ 그린컴퓨터디자인아카데미</span>
+                        </p>
+                        <p>
+                            시각디자인학과 졸업
+                            <span>2017.02 l 영남이공대학교(2년제)</span>
+                        </p>
+                    </div>
+                    <div class="certifications">
+                        <h4>Certifications</h4>
+                        <p>
+                            웹디자인기능사
+                            <span>2026.10</span>
+                        </p>
+                        <p>
+                            운전면허 (2종 보통)
+                            <span>2024.07</span>
+                        </p>
+                    </div>
+                    <div class="work_history">
+                        <h4>Work history</h4>
+                        <p>
+                            (주)조군샵 웹디자이너 근무
+                            <span>2019.06 ~ 2023.01 l 3년 8개월</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h4>Skill</h4>
+                    <img src="img/photoshop.png" alt="포토샵">
+                    <img src="img/Illustration.png" alt="일러스트">
+                    <img src="img/figma.png" alt="피그마">
+                    <img src="img/html.png" alt="html">
+                    <img src="img/css.png" alt="css">
+                    <img src="img/jquery.png" alt="제이쿼리">
+                    <img src="img/visuals.png" alt="비주얼스튜디오">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- header -->
+    <header>
+           <p class="scene">[SCENE <span class="num">01</span>: <span class="section_list">Coding</span>]</p>
+           <nav>
+            <ul>
+                <li><a href="#coding">Coding</a></li>
+                <li><a href="#landing_page">Landing_Page</a></li>
+                <li><a href="#app">App Design</a></li>
+                <li><a href="#cardnews">Card News</a></li>
+                <li><a href="#branding">Branding</a></li>
+                <li><a href="#design">Design</a></li>
+            </ul>
+           </nav>
+    </header>
+
+    <!-- 03 coding -->
+    <section id="coding" class="scene-target" data-num="01" data-name="Coding">
+        <!-- 별_왼쪽 -->
+        <div class="star left_star">
+            <img src="img/Star_yellow.svg" alt="큰별" class="star_ob">
+            <img src="img/Star_yellow.svg" alt="작은별" class="star_oa">
+        </div>
+        <div class="inner">
+            <!-- Swiper -->
+            <div class="swiper coding_swiper">
+                <div class="swiper-wrapper">
+
+                    <!-- 국가정신건강포털 -->
+                   <div class="swiper-slide coding_slide">
+                    <div class="coding_work">
+                        <!-- 상단바 -->
+                        <div class="topbar">
+                            <p>vlog://take01_clone_coding</p>
+                            <div class="icon_box">
+                                <img src="img/coding_minimize.svg" alt="최소화">
+                                <img src="img/coding_maximize.svg" alt="최소화">
+                                <img src="img/coding_close.svg" alt="최소화">
+                            </div>
+                        </div>
+                        <!-- 호버하면 나오는거 -->
+                        <div class="blurbg">
+                            <div class="text_box">
+                                <p>국가정신건강포털</p>
+                                <span>개인 프로젝트 l 기여도 : 100%</span>
+                                <div class="button">
+                                    <a href="https://www.mentalhealth.go.kr/portal/main/index.do" target="_blank">원본</a>
+                                    <a href="https://zinagayo826-debug.github.io/mentalhealth/#" target="_blank">클론코딩</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="img/coding_01.jpg" alt="국가정신건강포털">
+                        </div>
+                    </div>
+                   </div>
+                   <!-- 02 -->
+                   <div class="swiper-slide coding_slide">
+                    <div class="coding_work">
+                        <!-- 상단바 -->
+                        <div class="topbar">
+                            <p>vlog://take02_clone_coding</p>
+                            <div class="icon_box">
+                                <img src="img/coding_minimize.svg" alt="최소화">
+                                <img src="img/coding_maximize.svg" alt="최소화">
+                                <img src="img/coding_close.svg" alt="최소화">
+                            </div>
+                        </div>
+                        <!-- 호버하면 나오는거 -->
+                        <div class="blurbg">
+                            <div class="text_box">
+                                <p>분당티케이병원</p>
+                                <span>개인 프로젝트 l 기여도 : 100%</span>
+                                <div class="button">
+                                    <a href="https://bundang.toptk.co.kr/index.php" target="_blank">원본</a>
+                                    <a href="https://zinagayo826-debug.github.io/bundangTk/" target="_blank">클론코딩</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="img/coding_02.jpg" alt="분당티케이병원">
+                        </div>
+                    </div>
+                   </div>
+                   <!-- 03 -->
+                   <div class="swiper-slide coding_slide">
+                    <div class="coding_work">
+                        <!-- 상단바 -->
+                        <div class="topbar">
+                            <p>vlog://take03_clone_coding</p>
+                            <div class="icon_box">
+                                <img src="img/coding_minimize.svg" alt="최소화">
+                                <img src="img/coding_maximize.svg" alt="최소화">
+                                <img src="img/coding_close.svg" alt="최소화">
+                            </div>
+                        </div>
+                        <!-- 호버하면 나오는거 -->
+                        <div class="blurbg">
+                            <div class="text_box">
+                                <p>피코그램</p>
+                                <span>개인 프로젝트 l 기여도 : 100%</span>
+                                <div class="button">
+                                    <a href="https://picogram.co.kr/" target="_blank">원본</a>
+                                    <a href="https://zinagayo826-debug.github.io/picogram/" target="_blank">클론코딩</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="img/coding_03.jpg" alt="국가정신건강포털">
+                        </div>
+                    </div>
+                   </div>
+                   <!-- 04 -->
+                   <div class="swiper-slide coding_slide">
+                    <div class="coding_work">
+                        <!-- 상단바 -->
+                        <div class="topbar">
+                            <p>vlog://take04_clone_coding</p>
+                            <div class="icon_box">
+                                <img src="img/coding_minimize.svg" alt="최소화">
+                                <img src="img/coding_maximize.svg" alt="최소화">
+                                <img src="img/coding_close.svg" alt="최소화">
+                            </div>
+                        </div>
+                        <!-- 호버하면 나오는거 -->
+                        <div class="blurbg">
+                            <div class="text_box">
+                                <p><i>(</i>주<i>)</i>365mc</p>
+                                <span>개인 프로젝트 l 기여도 : 100%</span>
+                                <div class="button">
+                                    <a href="https://www.365mc.co.kr/networks/index.html" target="_blank">원본</a>
+                                    <a href="https://zinagayo826-debug.github.io/365mc/" target="_blank">클론코딩</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="img/coding_04.jpg" alt="국가정신건강포털">
+                        </div>
+                    </div>
+                   </div>
+                   <!-- 05 -->
+                   <div class="swiper-slide coding_slide">
+                    <div class="coding_work">
+                        <!-- 상단바 -->
+                        <div class="topbar">
+                            <p>vlog://take05_web_design</p>
+                            <div class="icon_box">
+                                <img src="img/coding_minimize.svg" alt="최소화">
+                                <img src="img/coding_maximize.svg" alt="최소화">
+                                <img src="img/coding_close.svg" alt="최소화">
+                            </div>
+                        </div>
+                        <!-- 호버하면 나오는거 -->
+                        <div class="blurbg">
+                            <div class="text_box">
+                                <p>삼다수 pet 수거 캠페인</p>
+                                <span>팀 프로젝트(3인) l 기여도 : 33.3%</span>
+                                <div class="button">
+                                    <a href="https://zinagayo826-debug.github.io/samdasoo/" target="_blank">웹디자인</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="img/coding_05.jpg" alt="국가정신건강포털">
+                        </div>
+                    </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <!-- 스와이프 페이지네이션 -->
+        <div class="swiper-pagination coding_pagination"></div>
+    </section>
+
+    <!-- 04 landing_page -->
+     <section id="landing_page" class="scene-target landing_page" data-num="02" data-name="Landing Page">
+        <div class="inner">
+            <div class="layout_design landing">
+                <!-- 상단바 -->
+                <div class="topbar">
+                    <p>vlog://Landing_Page</p>
+                    <div class="icon_box">
+                        <img src="img/coding_minimize.svg" alt="최소화">
+                        <img src="img/coding_maximize.svg" alt="최소화">
+                        <img src="img/coding_close.svg" alt="최소화">
+                    </div>
+                </div>
+                <!-- 호버하면 나오는거 -->
+                <div class="blurbg">
+                    <div class="text_box">
+                        <p>빙그레 식기 랜딩 페이지</p>
+                        <span>개인 프로젝트 l 기여도 : 100%</span>
+                        <div class="button">
+                            <a href="https://www.figma.com/proto/eJnPkeah6Yhdy8FHeDpSRq/%EB%B0%B1%EC%A7%84%EC%95%84_%EB%B9%99%EA%B7%B8%EB%A0%88-%EC%8B%9D%EA%B8%B0-%EB%9E%9C%EB%94%A9%ED%8E%98%EC%9D%B4%EC%A7%80?team_id=1649335711865257556&node-id=171-2&page-id=0%3A1&t=AwQlOPWh6Y4vtKYK-1" target="_blank">프로세스</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="thumbnail">
+                    <img src="img/landing_01.png" alt="렌딩페이지">
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <!-- 05 app -->
+     <section id="app" class="scene-target" data-num="03" data-name="App Design">
+        <div class="inner">
+            <!-- 왼쪽 텍스트 -->
+            <div class="app_txtbox">
+                <div class="title">
+                    <span class="sub_title">5분 만에 해결 하는 동네 히어로 찾기</span>
+                    <h2>Bug Hunter</h2>
+                    <p class="sub_txt">팀 프로젝트(3인) l 기여도 : 33.3%</p>
+                    <p class="sub_txt">#figma #photoshop</p>
+                </div>
+                <div class="overview">
+                    <h4>Overview</h4>
+                    <p>벌레 처리가 어려운 1인 가구를 위한<br> <b>실시간 SOS 매칭 앱</b>입니다.<br>위급한 순간 복잡한 과정 없이 즉시 요청할 수 있는<br> 간결한 동선과 <b>위치 기반 매칭 UI에<br> 집중해 설계</b>했습니다.</p>
+                </div>
+                <div class="btn">
+                    <a class="link" href="https://www.figma.com/proto/xbcFTfuxhb1QY2MYSfTC13/%EC%95%B1%EB%94%94%EC%9E%90%EC%9D%B8-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4?node-id=1-304&p=f&m=dev&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&t=hxHqfLf3hlWFytMR-1" target="_blank">프로세스</a>
+                    <a class="link" href="https://www.figma.com/proto/a03zuor7hni6EOoocPvkt5/1%EC%A1%B0_%EC%95%B1%EB%94%94%EC%9E%90%EC%9D%B8?node-id=242-288&starting-point-node-id=76%3A15&t=e4oMEI3kwUnPFpLu-1" target="_blank">프로토타입</a>
+                </div>
+            </div>
+
+            <!-- 오른쪽 이미지 -->
+             <div class="img_box">
+                 <img src="img/app_img01.png" alt="앱디자인1">
+                 <img src="img/app_img02.png" alt="앱디자인2">
+             </div>
+        </div>
+     </section>
+
+    <!-- 06 cardnews -->
+     <section id="cardnews" class="scene-target" data-num="04" data-name="Card News">
+
+        <!-- 이미지 누르면 나오는 팝업창 -->
+        <div class="cardnews_popup">
+            <div class="popup_content">
+                <button type="button" class="popup_close" aria-label="닫기">×</button>
+                <img class="popup_img" src="img/cardnews_design01.jpg" alt="팝업이미지">
+            </div>
+        </div>
+
+        <div class="inner">
+            <div class="insta">
+                <div class="insta_profile">
+                    <div class="profile_img">
+                        <img src="img/zina.png" alt="프로필사진">
+                    </div>
+                    <div class="text_box">
+                        <p class="name">zina</p>
+                        <span>게시물 12</span>
+                        <span>팔로워 2k</span>
+                        <span>팔로우 26</span>
+                        <p class="hashtag">#개인작업 #기여도100% #photoshop</p>
+                    </div>
+                </div>
+                <div class="insta_btn">
+                    <div class="edit_btn">
+                        <p>프로필 편집</p>
+                    </div>
+                    <div class="edit_btn">
+                        <p>보관함 가기</p>
+                    </div>
+                </div>
+                <div class="insta_icon">
+                    <img src="img/cardnews_icon01.svg" alt="아이콘1">
+                    <img src="img/cardnews_icon02.svg" alt="아이콘2">
+                    <img src="img/cardnews_icon03.svg" alt="아이콘3">
+                    <img src="img/cardnews_icon04.svg" alt="아이콘4">
+                    <img src="img/cardnews_icon05.svg" alt="아이콘5">
+                </div>
+            <div class="insta_grid">
+                <div class="cardnews_img">
+                    <img src="img/cardnews_design01.jpg" alt="구달세럼">
+                </div>
+                <div class="cardnews_img">
+                    <img src="img/cardnews_design02.jpg" alt="이삭토스트">
+                </div>
+                <div class="cardnews_img">
+                    <img src="img/cardnews_design03.jpg" alt="포도복숭아축제">
+                </div>
+                <div class="cardnews_img">
+                    <img src="img/cardnews_design04.jpg" alt="보스헤드셋">
+                </div>
+                <!-- 인:파트너스 -->
+                <div class="cardnews_img">
+                    <img src="img/cardnews_design05.png" alt="인:파트너스">
+                </div>
+                <div class="cardnews_img">
+                    <img src="img/cardnews_design06.png" alt="인:파트너스">
+                </div>
+                <div class="cardnews_img">
+                    <img src="img/cardnews_design07.png" alt="인:파트너스">
+                </div>
+                <div class="cardnews_img">
+                    <img src="img/cardnews_design08.png" alt="인:파트너스">
+                </div>
+                <div class="cardnews_img">
+                    <img src="img/cardnews_design09.png" alt="인:파트너스">
+                </div>
+                <div class="cardnews_img">
+                    <img src="img/cardnews_design10.png" alt="인:파트너스">
+                </div>
+                <div class="cardnews_img">
+                    <img src="img/cardnews_design11.png" alt="인:파트너스">
+                </div>
+                <div class="cardnews_img">
+                    <img src="img/cardnews_design12.png" alt="인:파트너스">
+                </div>
+            </div>
+            </div>
+        </div>
+     </section>
+
+    <!-- 07 branding -->
+     <section id="branding" class="scene-target" data-num="05" data-name="Branding">
+        <!-- 브랜딩 프로세스 팝업 -->
+        <div class="branding_popup">
+            <div class="branding_content">
+                <button type="button"
+                class="branding_close"
+                aria-label="닫기">×</button>
+
+                <div class="branding_scroll">
+                <img
+                class="branding_image"
+                src="img/branding_02.jpg"
+                alt="브랜딩 디자인 프로세스">
+                </div>
+            </div>
+        </div>
+        <div class="inner">
+            <div class="layout_design branding_logo">
+                <!-- 상단바 -->
+                <div class="topbar">
+                    <p>vlog://Branding</p>
+                    <div class="icon_box">
+                        <img src="img/coding_minimize.svg" alt="최소화">
+                        <img src="img/coding_maximize.svg" alt="최소화">
+                        <img src="img/coding_close.svg" alt="최소화">
+                    </div>
+                </div>
+                <!-- 호버하면 나오는거 -->
+                <div class="blurbg">
+                    <div class="text_box">
+                        <p>영암군 축산과 로고 브랜딩</p>
+                        <span>공모전 개인 프로젝트 l 기여도 : 100%</span>
+                        <div class="button">
+                            <button type="button" class="BrandingProcess">프로세스</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="thumbnail">
+                    <img src="img/branding_01.jpg" alt="렌딩페이지">
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <!-- 08 design -->
+     <section id="design" class="scene-target" data-num="06" data-name="Design">
+        <!-- 비눗방울 효과 -->
+        <div class="circular_fx">
+            <div class="bg"></div>
+            <div class="outline"></div>
+        </div>
+        <!-- 상세페이지 팝업 -->
+        <div class="salespage_popup">
+            <div class="salespage_content">
+                <button type="button" class="salespage_close" aria-label="닫기">×</button>
+                <div class="salespage_scroll">
+                    <img class="salespage_image" src="img/design_popup01.jpg" alt="상세페이지 디자인">
+                </div>
+            </div>
+        </div>
+        <div class="inner">
+            <!-- 01 -->
+            <div class="content_left">
+                <!-- 락피쉬 -->
+                <div class="design_work">
+                    <!-- 상단바 -->
+                    <div class="topbar">
+                        <p>vlog://Design_SalesPage_01</p>
+                        <div class="icon_box">
+                            <img src="img/coding_minimize.svg" alt="최소화">
+                            <img src="img/coding_maximize.svg" alt="최소화">
+                            <img src="img/coding_close.svg" alt="최소화">
+                        </div>
+                    </div>
+                    <!-- 호버하면 나오는거 -->
+                    <div class="blurbg">
+                        <div class="text_box">
+                            <p>락피쉬 상세페이지</p>
+                             <span>개인 프로젝트 l 기여도 : 100%</span>
+                            <div class="design_button">
+                                <button type="button" data-img="img/design_popup01.jpg" class="SalesPage">프로세스</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thumbnail">
+                        <img src="img/design_salesPage01.jpg" alt="락피쉬">
+                    </div>
+                </div>
+                <!-- 펫샴푸 -->
+                <div class="design_work">
+                    <!-- 상단바 -->
+                    <div class="topbar">
+                        <p>vlog://Design_SalesPage_02</p>
+                        <div class="icon_box">
+                            <img src="img/coding_minimize.svg" alt="최소화">
+                            <img src="img/coding_maximize.svg" alt="최소화">
+                            <img src="img/coding_close.svg" alt="최소화">
+                        </div>
+                    </div>
+                    <!-- 호버하면 나오는거 -->
+                    <div class="blurbg">
+                        <div class="text_box">
+                            <p>펫샴푸 상세페이지</p>
+                             <span>개인 프로젝트 l 기여도 : 100%</span>
+                            <div class="design_button">
+                                <button type="button" data-img="img/design_popup02.jpg" class="SalesPage">프로세스</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thumbnail">
+                        <img src="img/design_salesPage02.jpg" alt="펫샴푸">
+                    </div>
+                </div>
+            </div>
+            <!-- 02 -->
+            <div class="content_right">
+                <!-- 코스메틱 제품 -->
+                <div class="design_work">
+                    <!-- 상단바 -->
+                    <div class="topbar">
+                        <p>vlog://Design_SalesPage_03</p>
+                        <div class="icon_box">
+                            <img src="img/coding_minimize.svg" alt="최소화">
+                            <img src="img/coding_maximize.svg" alt="최소화">
+                            <img src="img/coding_close.svg" alt="최소화">
+                        </div>
+                    </div>
+                    <!-- 호버하면 나오는거 -->
+                    <div class="blurbg">
+                        <div class="text_box">
+                            <p>코스메틱 유통사 상세페이지</p>
+                             <span>외주 / 클라이언트 작업 ㅣ 기여도 100%</span>
+                            <div class="design_button">
+                                <a href="https://www.coupang.com/vp/products/9204886912?itemId=27182488310&vendorItemId=94150053051&sourceType=SDP_BRANDSHOP_RECOMMENDATION" target="_blank" class="btn">바로가기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thumbnail">
+                        <img src="img/design_salesPage03.jpg" alt="락피쉬">
+                    </div>
+                </div>
+                <!-- 조은맘 -->
+                <div class="design_work">
+                    <!-- 상단바 -->
+                    <div class="topbar">
+                        <p>vlog://Design_banner</p>
+                        <div class="icon_box">
+                            <img src="img/coding_minimize.svg" alt="최소화">
+                            <img src="img/coding_maximize.svg" alt="최소화">
+                            <img src="img/coding_close.svg" alt="최소화">
+                        </div>
+                    </div>
+                    <!-- 호버하면 나오는거 -->
+                    <div class="blurbg">
+                        <div class="text_box">
+                            <p>조은맘 배너 리디자인</p>
+                             <span>외주 / 클라이언트 작업 ㅣ 기여도 100%</span>
+                            <div class="design_button">
+                                <a href="https://xn--289an2w4ojnhb23alqx4af6s.com/" target="_blank" class="btn">바로가기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thumbnail">
+                        <img src="img/design_salesPage04.jpg" alt="락피쉬">
+                    </div>
+                </div>
+            </div>
+            <div class="sunbg">
+                <img src="img/sun.png" alt="태양">
+            </div>
+        </div>
+
+        <!-- 푸터 -->
+         <footer>
+            <div class="subscribe">
+                <!-- 비눗방울 효과 -->
+                <div class="circular_fx">
+                    <div class="outline"></div>
+                    <div class="bg"></div>
+                </div>
+
+                <!-- 버튼 누르면 나오는 효과 -->
+                <div class="Journey">
+                        <div class="left">
+                            <!-- 번호 -->
+                            <p class="address " data-copy="010-6261-4102">
+                                <span class="original">&#128222; 010-6261-4102</span>
+                                <span class="copied">✓ Copied!</span>
+                            </p>
+                            <!-- 주소 -->
+                            <p class="address">&#x1F4CD; 163, Dongbuk-ro, Daegu</p>
+                        </div>
+
+                        <div class="right">
+                            <!-- 노션 -->
+                             <a href="https://app.notion.com/p/Zina-Portfolio-3d57bccf60e5806f8ef8ea10b0d879c1?source=copy_link" target="_blank" class="address email">&#128190; Open Notion File</a>
+    
+                            <!-- 이메일 -->
+                            <p class="address" data-copy="zinagayo826@gmail.com">
+                                <span class="original">&#128231; zinagayo826@gmail.com</span>
+                                <span class="copied">✓ Copied!</span>
+                            </p>
+                        </div>
+                </div>
+                <button class="journey_btn">Subscribe to My Journey?</button>
+
+            </div>
+        </footer>
+        <p class="copy">&copy; 2026 zina. All rights reserved.</p>
+     </section>
+</body>
+</html>

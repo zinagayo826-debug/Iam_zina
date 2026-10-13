@@ -1,0 +1,3070 @@
+/*======================== 1440px 이하 ======================== */
+@media screen and (max-width: 1440px) {
+    /* 카메라 프레임 */
+    /* 2. 'ㄱ'자 모양의 선 가로/세로 길이 줄이기 */
+    .topleft span:nth-child(2),
+    .topright span:nth-child(2),
+    .bottomleft span:nth-child(3),
+    .bottomright span:nth-child(3) {
+    width: 90px;
+    }
+
+    .topleft span:nth-child(3),
+    .topright span:nth-child(3),
+    .bottomleft span:nth-child(2),
+    .bottomright span:nth-child(2) {
+        height: 86px;
+    }
+
+    /* 왼쪽 구름 */
+    .deco_left {
+        transform: scale(0.75);
+    }
+    /* 달 */
+    .moon {
+        top: -25px;
+        right: -100px;
+    }
+    /* 구름 */
+    .cloud_left {
+        left: -40px;
+    }
+
+    .intro_title .sub_title {
+        font-size: 34px;
+    }
+
+    /* 메인타이틀 */
+    .intro_title .record_box {
+        width: 800px;
+        height: 190px;
+    }
+
+    .intro_title .record_box img {
+        width: clamp(700px, 30vw, 460px);
+    }
+
+    /* 핑크박스 */
+    .intro_title .logzip {
+        font-size: 80px;
+    }
+
+    /* 오른쪽 별 */
+    .deco_right .star {
+        transform: scale(0.8);
+    }
+    /* 오른 구름 */
+    .cloud_right {
+        z-index: -1 !important;
+        transform: scale(0.8);
+    }
+
+ /* ------------------------ #aboutme ------------------------ */
+    #aboutme .inner {
+        max-width: 1200px;
+        justify-content: center;
+        gap: 80px;
+        transform: scale(0.9);
+    }
+
+    .ic_card {
+        max-width: 320px;
+    }
+
+    /* 언덕 */
+    #aboutme::after {
+        height: 290px;
+    }
+
+    /* 별 bg */
+    #aboutme .star {
+        transform: scale(0.78);
+    }
+
+    /* ------------------------ #coding ------------------------ */
+    #coding {
+        padding: 170px 0;
+    }
+    #coding .inner {
+        transform: scale(0.78);
+    }
+
+    .coding_pagination {
+        bottom: 20% !important;
+    }
+
+    #coding .left_star {
+        left: 6%; bottom: 14%;
+    }
+
+    /* 구름 */
+    #coding::after {
+        width: 320px;
+        height: 162px;
+        top: 16%; left: 2%;
+    }
+
+
+
+/* ------------------------ #landing_page ------------------------ */
+     /* 구름이들 */
+    #landing_page .inner::before {
+        width: 300px;
+        height: 147px;
+        bottom: -12%; left: -12%;
+    }
+    #landing_page .inner::after {
+        width: 300px;
+        height: 151px;
+        top: -5%; right: -13%;
+    }
+
+/* ------------------------ #app ------------------------ */
+    #app .inner {
+        max-width: 1100px;
+    }
+
+    #app .inner .img_box {
+        transform: scale(0.85);
+    }
+
+    /* 구름이 */
+    #app .inner::after {
+        width: 380px;
+        height: 190px;
+        right: -8%;
+    }
+
+
+/* ------------------------ #cardnews ------------------------ */
+    #cardnews .inner {
+        max-width: 1000px;
+    }
+
+    .cardnews_popup .popup_img {
+        max-height: calc(100vh - 180px);
+    }
+
+    .insta_grid {
+        height: 280px;
+    }
+
+    .cardnews_img {
+        height: 243px;
+    }
+
+    /* 구름이 */
+    #cardnews .inner::before {
+        width: 300px;
+        height: 150px;
+        top: 38%; left: -17%;
+    }
+
+/* --------------- #landing_page / #cardnews --------------- */
+    #landing_page, #branding {
+        padding: 130px 0;
+    }
+
+
+    #landing_page .inner,#branding .inner {
+        max-width: 1100px;
+    }
+
+    /* 상단바 텍스트 */
+    .landing .topbar p, .branding_logo .topbar p {
+        font-size: 23px;
+    }
+
+    .landing .blurbg, .branding_logo .blurbg {
+        height: 91%;
+    }
+
+    /* 메인 타이틀 */
+    .landing .blurbg .text_box p,
+    .branding_logo .blurbg .text_box p {
+        font-size: 48px;
+        margin-bottom: 6px;
+    }
+
+    .landing .blurbg .text_box span, .branding_logo .blurbg .text_box span {
+        font-size: 20px;
+    }
+
+    .landing .blurbg .text_box .button button, .branding_logo .blurbg .text_box .button button {
+        font-size: 18px;
+    }
+
+    /* 브랜딩 썸네일 */
+    .branding_logo .thumbnail img {
+        height: 500px;
+    }
+
+    /* 구름쓰 */
+    #branding .inner::after {
+        width: 330px;
+        height: 163px;
+        top: -13%; right: -12%;
+    }
+
+/* ------------------------ #design ------------------------ */
+    #design .inner {
+        max-width: 1100px;
+    }
+    
+    .design_work {
+        width: 450px;
+        height: 350px;
+    }
+
+    .design_work .blurbg {
+        height: 300px;
+    }
+
+    #design .inner .content_right {
+        margin-top: 8%;
+    }
+
+
+    /* 왼구르미 */
+    #design .inner::before {
+        top: -13%; left: -3%;
+        width: 340px;
+        height: 170px;
+    }
+
+    /* 태양 */
+    .sunbg {
+        width: 210px;
+        height: 210px;
+        right: -7%;
+    }
+
+    /* 오른구르미 */
+    #design .inner::after {
+        width: 370px;
+        height: 185px;
+        right: -25%;
+
+    }
+}
+
+
+/*======================== 1024px 이하 ======================== */
+@media screen and (max-width: 1024px) {
+
+    section {
+        height: auto !important;
+    }
+
+    #intro {
+        height: 100vh !important;
+    }
+    
+    .intro_inner {
+        padding: 0 20px;
+    }
+
+    .intro_title .sub_title {
+        font-size: 30px;
+    }
+
+    .intro_title .record_box {
+        width: 600px;
+        height: 170px;
+    }
+
+    .intro_title .record_box img {
+        width: clamp(551px, 30vw, 460px);
+    }
+
+    .intro_title .logzip {
+        font-size: 70px;
+    }
+    
+    /* 4. 왼쪽 데코도 타이틀과 겹치지 않게 크기 축소 */
+    .deco_left .moon {
+        width: 130px;
+        left: 70%;
+    }
+    .deco_left .cloud_left {
+        width: 230px;
+        top: 10%;
+    }
+
+    .cloud_right {
+        width: 190px;    
+        height: auto;
+        left: auto;     
+        right: 0;        
+        bottom: -10%;
+    }
+
+    /* 카메라 프레임 */
+    .peuleim_line {
+        height: 70px;
+    }
+
+    /* 2. 'ㄱ'자 모양의 선 가로/세로 길이 줄이기 */
+    .topleft span:nth-child(2),
+    .topright span:nth-child(2),
+    .bottomleft span:nth-child(3),
+    .bottomright span:nth-child(3) {
+    width: 60px;
+    }
+
+    .topleft span:nth-child(3),
+    .topright span:nth-child(3),
+    .bottomleft span:nth-child(2),
+    .bottomright span:nth-child(2) {
+        height: 60px;
+    }
+
+    .topleft img {
+        width: 50px;
+        height: auto;
+        top: 20px; 
+        left: 20px;
+    }
+
+    .topright {
+        width: 120px;
+    }
+    .topright p {
+        font-size: 28px;
+        top: 15px; 
+        right: 20px;
+    }
+    .topright p::before {
+        width: 20px;
+        height: 20px;
+        top: 8px; 
+        left: -25px;
+    }
+
+    /* 5. 하단 왼쪽/오른쪽 텍스트(해상도, 타이머) 크기 조정 */
+    .bottomleft p, 
+    .bottomright p {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    
+    .bottomleft {
+        width: 200px;
+    }
+
+    .bottomleft p {
+        bottom: 15px;
+    }
+
+    .bottomright p {
+        right: 25px;
+    }
+
+
+     /* ------------------------ #aboutme ------------------------ */
+    #aboutme {
+        padding: 10% 0;
+    }
+    #aboutme .inner {
+        max-width: 1200px;
+        justify-content: space-between;
+    }
+
+    /* --------------- 왼쪽 프로필사진 --------------- */
+    .ic_card {
+        max-width: 280px;
+    }
+
+    /* --------------- 오른쪽 텍스트 --------------- */
+    .sketch h2 {
+        font-size: 50px;
+        margin-bottom: 2%;
+        white-space: nowrap;
+    }
+
+    .sketch p {
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: -0.6px;
+    }
+
+    .profile h4 {
+        font-size: 22px;
+    }
+
+    .profile_record p {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .profile_record p .respon {
+        display: block;
+    }
+    .profile_record p .pcver {
+        display: none;
+    }
+
+    .profile_record span {
+    font-size: 14px;
+    }
+
+    /* 스킬 */
+    .skill img {
+        width: 52px;
+        height: 52px;
+    }
+
+    /* 언덕 */
+    #aboutme::after {
+        height: 290px;
+    }
+
+    /* 별 bg */
+    #aboutme .star {
+        transform: scale(0.6);
+    }
+
+    #aboutme .left_star {
+        top: 0%;
+        left: 0%;
+    }
+
+    #aboutme .right_star {
+        top: 32%;
+        right: 10%;
+    }
+
+    /* 구름 */
+    #aboutme .inner::before {
+        width: 280px;
+        height: 141px;
+        top: 3%;
+        left: -13%;
+    }
+
+    #landing_page .inner::after {
+        top: -12% !important;
+        
+    }
+
+/* ------------------------ header ------------------------ */
+    header {
+        height: 70px;
+        margin-bottom: -70px;
+        padding: 0 25px;
+    }
+
+    header .scene {
+        font-size: 20px;
+    }
+
+    nav ul a {
+        font-size: 16px;
+        padding: 6px 13px;
+    }
+
+    /* ------------------------ #coding ------------------------ */
+    #coding {
+        padding: 170px 0;
+    }
+    #coding .inner {
+        transform: scale(0.78);
+    }
+
+    .thumbnail {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .thumbnail img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .coding_pagination {
+        bottom: 20% !important;
+    }
+
+    #coding .left_star {
+        left: 6%; bottom: 14%;
+    }
+
+    /* 구름 */
+    #coding::after {
+        width: 320px;
+        height: 162px;
+        top: 16%; left: 2%;
+    }
+
+
+
+/* ------------------------ #landing_page ------------------------ */
+     /* 구름이들 */
+    #landing_page .inner::before {
+        width: 300px;
+        height: 147px;
+        bottom: -12%; left: -12%;
+    }
+    #landing_page .inner::after {
+        width: 300px;
+        height: 151px;
+        top: -5%; right: -13%;
+    }
+
+/* ------------------------ #app ------------------------ */
+    #app{
+        padding: 180px 0;
+    }
+
+
+    #app .inner {
+        max-width: 800px;
+    }
+
+    #app .inner .img_box {
+        transform: scale(0.8);
+    }
+
+    #app .inner .img_box img {
+        width: 280px;
+        height: auto;
+    }
+    #app .inner .img_box img:first-child {
+        top: 16%; left: 1%;
+    }
+    #app .inner .img_box img:last-child{
+        right: -17%;
+    }
+
+    .overview p {
+        width: 408px;
+    }
+
+    /* 구름이 */
+    #app .inner::after {
+        width: 330px;
+        height: 165px;
+        right: -11%;
+    }
+
+
+/* ------------------------ #cardnews ------------------------ */
+
+    #cardnews .inner {
+        max-width: 800px;
+    }
+
+    .cardnews_popup .popup_img {
+        max-height: calc(100vh - 180px);
+    }
+
+    .insta_grid {
+        height: 280px;
+    }
+
+    .cardnews_img {
+        height: 193px;
+    }
+
+    /* 구름이 */
+    #cardnews .inner::before {
+        width: 300px;
+        height: 150px;
+        top: 38%; left: -17%;
+    }
+
+/* --------------- #landing_page / #cardnews --------------- */
+    #landing_page, #branding {
+        padding: 180px 0;
+    }
+
+    .layout_design {
+        height: 550px;
+    }
+    
+    #landing_page .inner,#branding .inner {
+        max-width: 800px;
+        height: 100%;
+    }
+
+    /* 상단바 텍스트 */
+    .landing .topbar p, .branding_logo .topbar p {
+        font-size: 20px;
+    }
+
+    .landing .blurbg, .branding_logo .blurbg {
+        height: 91%;
+    }
+
+    /* 메인 타이틀 */
+    .landing .blurbg .text_box p,
+    .branding_logo .blurbg .text_box p {
+        font-size: 45px;
+        margin-bottom: 6px;
+    }
+
+    .landing .blurbg .text_box span, .branding_logo .blurbg .text_box span {
+        font-size: 19px;
+    }
+
+    .landing .blurbg .text_box .button button, .branding_logo .blurbg .text_box .button button {
+        font-size: 17px;
+    }
+
+    
+
+    /* 구름쓰 */
+    #branding .inner::after {
+        width: 330px;
+        height: 163px;
+        top: -13%; right: -12%;
+    }
+
+/* ------------------------ #design ------------------------ */
+    #design {
+        /* height: auto; */
+        padding-top: 180px;
+    }
+
+    #design .inner {
+        max-width: 800px;
+    }
+    
+    .design_work {
+        width: 450px;
+        height: 350px;
+    }
+
+    .design_work .blurbg .text_box p {
+        font-size: 30px;
+    }
+
+    .design_work .blurbg {
+        height: 300px;
+    }
+
+    #design .inner .content_left, #design .inner .content_right {
+        justify-content: center;
+    }
+
+    #design .inner .content_right {
+        margin-top: 4%;
+    }
+
+
+    /* 왼구르미 */
+    #design .inner::before {
+        top: -14%;
+        left: -16%;
+        width: 320px;
+        height: 160px;
+    }
+
+    /* 태양 */
+    .sunbg {
+        width: 210px;
+        height: 210px;
+        right: -7%;
+        z-index: -1;
+    }
+
+    /* 오른구르미 */
+    #design .inner::after {
+        width: 350px;
+        height: 175px;
+        right: -29%;
+    }
+
+
+/* ------------------------ footer ------------------------ */
+    footer {
+        margin-top: 13%;
+        max-width: 900px !important;
+    }
+
+    footer .Journey {
+        margin-bottom: 40px;
+        gap: 20px;
+    }
+
+    footer .Journey .address {
+        font-size: 15px;
+        white-space: nowrap;
+    }
+
+    /* 비눗방울 효과 */
+    .subscribe .circular_fx {
+        top: -14%;
+        left: 22%;
+    }
+
+}
+
+@media screen and (max-width: 920px) {
+    /* ------------------------ header ------------------------ */
+    header {
+        height: auto;
+        padding: 15px 0;
+        margin-bottom: -100px;
+        flex-direction: column;
+        gap: 10px;
+        background: rgba(255, 255, 255, 0.08);
+    }
+}
+
+
+/*======================== 768px 이하 ======================== */
+@media screen and (max-width: 768px) {
+
+    section {
+        height: auto !important;
+    }
+
+    #intro {
+        height: 100vh !important;
+    }
+    
+    .intro_inner {
+        padding: 0 20px;
+    }
+
+    .intro_title .sub_title {
+        font-size: 30px;
+    }
+
+    .intro_title .record_box {
+        width: 600px;
+        height: 170px;
+    }
+
+    .intro_title .record_box img {
+        width: clamp(551px, 30vw, 460px);
+    }
+
+    .intro_title .logzip {
+        font-size: 70px;
+        z-index: 20 !important;  
+    }
+    
+    /* 4. 왼쪽 데코도 타이틀과 겹치지 않게 크기 축소 */
+    .deco_left .moon {
+        width: 130px;
+        left: 70%;
+    }
+    .deco_left .cloud_left {
+        width: 230px;
+        top: 10%;
+    }
+
+    .cloud_right {
+        width: 170px;    
+        height: auto;
+        left: auto;     
+        right: 0;        
+        bottom: -15%;
+    }
+
+    /* 카메라 프레임 */
+    .peuleim_line {
+        height: 70px;
+    }
+
+    /* 2. 'ㄱ'자 모양의 선 가로/세로 길이 줄이기 */
+    .topleft span:nth-child(2),
+    .topright span:nth-child(2),
+    .bottomleft span:nth-child(3),
+    .bottomright span:nth-child(3) {
+    width: 60px;
+    }
+
+    .topleft span:nth-child(3),
+    .topright span:nth-child(3),
+    .bottomleft span:nth-child(2),
+    .bottomright span:nth-child(2) {
+        height: 60px;
+    }
+
+    .topleft img {
+        width: 50px;
+        height: auto;
+        top: 20px; 
+        left: 20px;
+    }
+
+    .topright {
+        width: 120px;
+    }
+    .topright p {
+        font-size: 28px;
+        top: 15px; 
+        right: 20px;
+    }
+    .topright p::before {
+        width: 20px;
+        height: 20px;
+        top: 8px; 
+        left: -25px;
+    }
+
+    /* 5. 하단 왼쪽/오른쪽 텍스트(해상도, 타이머) 크기 조정 */
+    .bottomleft p, 
+    .bottomright p {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    
+    .bottomleft {
+        width: 200px;
+    }
+
+    .bottomleft p {
+        bottom: 15px;
+    }
+
+    .bottomright p {
+        right: 25px;
+    }
+
+    .deco_right .star {
+        position: absolute;
+        top: 2%;
+        left: -149px;
+        z-index: 2;
+    }
+
+
+     /* ------------------------ #aboutme ------------------------ */
+    #aboutme {
+        padding: 10% 0;
+    }
+    #aboutme .inner {
+        max-width: 800px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    /* --------------- 왼쪽 프로필사진 --------------- */
+    .ic_card {
+        margin: 0 auto;
+    }
+
+    /* --------------- 오른쪽 텍스트 --------------- */
+    .sketch h2 {
+        font-size: 50px;
+        margin-bottom: 2%;
+        white-space: nowrap;
+    }
+
+    .sketch {
+        text-align: center;
+    }
+
+    .sketch p {
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: -0.6px;
+    }
+
+    .profile {
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .profile h4 {
+        font-size: 25px;
+    }
+
+    .profile_record {
+        justify-content: center;
+        gap: 70px;
+        text-align: center;
+    }
+
+    .profile_record p {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .profile_record p .respon {
+        display: block;
+    }
+    .profile_record p .pcver {
+        display: none;
+    }
+
+    .profile_record span {
+    font-size: 14px;
+    }
+
+    /* 스킬 */
+    .skill {
+        text-align: center;
+    }
+    .skill img {
+        width: 70px;
+        height: 70px;
+        margin: 0 5px;
+    }
+
+    /* 언덕 */
+    #aboutme::after {
+        height: 290px;
+    }
+
+    /* 별 bg */
+    #aboutme .star {
+        transform: scale(0.55);
+    }
+
+    #aboutme .left_star {
+        top: 0%;
+        left: 0%;
+    }
+
+    #aboutme .left_star {
+        display: none;
+    }
+
+    #aboutme .right_star {
+        top: 40%;
+        right: 19%;
+    }
+
+    /* 구름 */
+    #aboutme .inner::before {
+        width: 280px;
+        height: 140px;
+        top: -5%;
+        left: 0%;
+    }
+
+    #landing_page .inner::after {
+        top: -12% !important;
+        
+    }
+
+/* ------------------------ #coding ------------------------ */
+    #coding {
+        padding: 170px 0;
+    }
+    #coding .inner {
+        transform: scale(1);
+    }
+
+    .coding_swiper {
+        -webkit-mask-image: none;
+        mask-image: none;
+    }
+
+    .thumbnail {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .thumbnail img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .coding_pagination {
+        z-index: 10 !important;
+        bottom: 15% !important;
+    }
+
+    #coding .left_star {
+        left: 6%; bottom: 14%;
+    }
+
+    /* 구름 */
+    #coding::after {
+        width: 320px;
+        height: 162px;
+        top: 16%; left: 2%;
+    }
+
+
+
+/* ------------------------ #landing_page ------------------------ */
+     /* 구름이들 */
+    #landing_page .inner::before {
+        width: 300px;
+        height: 147px;
+        bottom: -35%; left: -12%;
+    }
+    #landing_page .inner::after {
+        width: 300px;
+        height: 151px;
+        top: -35% !important; right: -13%;
+    }
+
+/* ------------------------ #app ------------------------ */
+    #app{
+        height: auto !important;
+        padding: 150px 0;
+    }
+
+
+    #app .inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 800px;
+        gap: 40px;
+    }
+
+    /* 텍스트 */
+    .app_txtbox {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        bottom: auto;
+        transform: none;
+        text-align: center;
+        order: 2;
+        margin-top: 15%;
+    }
+
+    .overview {
+        text-align: center;
+        margin: 60px 0;
+    }
+
+    .overview p {
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        padding: 0 80px;
+    }
+
+    .overview p br {
+    display: block;
+}
+
+    #app .inner .img_box {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        top: 3%;
+        transform: none;
+        order: 1;
+    }
+
+    #app .inner .img_box img {
+        position: absolute;
+        width: 280px;
+        height: auto;
+        text-align: center;
+    }
+    #app .inner .img_box img:first-child {
+        top: 16%;
+        left: 20%;
+    }
+    #app .inner .img_box img:last-child{
+        right: 16%;
+    }
+
+
+    /* 구름이 */
+    #app .inner::after {
+        width: 330px;
+        height: 165px;
+        right: -11%;
+    }
+
+
+/* ------------------------ #cardnews ------------------------ */
+    #cardnews {
+        padding: 150px 0;
+    }
+
+    #cardnews .inner {
+        max-width: 800px;
+    }
+
+    .cardnews_popup .popup_img {
+        max-height: calc(100vh - 180px);
+    }
+
+    .insta_grid {
+        height: 450px;
+    }
+
+    .cardnews_img {
+        height: 173px;
+    }
+
+    /* 구름이 */
+    #cardnews .inner::before {
+        width: 300px;
+        height: 150px;
+        top: 38%; left: -17%;
+    }
+
+/* --------------- #landing_page / #cardnews --------------- */
+    #landing_page, #branding {
+        padding: 150px 0;
+    }
+
+    .layout_design {
+        height: 550px;
+    }
+    
+    #landing_page .inner,#branding .inner {
+        max-width: 800px;
+        height: 100%;
+    }
+
+    /* 상단바 텍스트 */
+    .landing .topbar p, .branding_logo .topbar p {
+        font-size: 20px;
+    }
+
+    .landing .blurbg, .branding_logo .blurbg {
+        height: 91%;
+    }
+
+    /* 메인 타이틀 */
+    .landing .blurbg .text_box p,
+    .branding_logo .blurbg .text_box p {
+        font-size: 45px;
+        margin-bottom: 6px;
+    }
+
+    .landing .blurbg .text_box span, .branding_logo .blurbg .text_box span {
+        font-size: 19px;
+    }
+
+    .landing .blurbg .text_box .button button, .branding_logo .blurbg .text_box .button button {
+        font-size: 17px;
+    }
+
+    
+
+    /* 구름쓰 */
+        #branding .inner::after {
+        width: 300px;
+        height: 150px;
+        top: -38%;
+        right: -15%;
+    }
+
+/* ------------------------ #design ------------------------ */
+    #design {
+        /* height: auto; */
+        padding-top: 150px;
+    }
+
+    #design .inner {
+        max-width: 600px;
+        padding-bottom: 80px;
+    }
+    
+    .design_work {
+        width: 450px;
+        height: 300px;
+    }
+
+    .design_work .topbar {
+        height: 45px;
+    }
+
+    .design_work .topbar p {
+        font-size: 14px;
+    }
+
+    .design_work .topbar .icon_box {
+        gap: 10px;
+    }
+
+    .design_work .topbar .icon_box img {
+        width: 12px;
+        height: 12px;
+    }
+
+    .design_work .blurbg .text_box p {
+        font-size: 28px;
+    }
+
+    .design_work .blurbg {
+        top: 45px;
+        height: 255px;
+    }
+
+    #design .inner .content_left, #design .inner .content_right {
+        justify-content: center;
+    }
+
+    #design .inner .content_right {
+        margin-top: 4%;
+    }
+
+    /* 비눗방울 */
+    .circular_fx {
+        top: 4%;
+        right: 2%;
+    }
+
+
+    /* 왼구르미 */
+    #design .inner::before {
+        top: -30%;
+        left: -11%;
+        width: 300px;
+        height: 150px;
+    }
+
+    /* 태양 */
+    .sunbg {
+        width: 210px;
+        height: 210px;
+        right: -7%;
+        z-index: -1;
+    }
+
+    /* 오른구르미 */
+    #design .inner::after {
+        width: 330px;
+        height: 165px;
+        right: -29%;
+        z-index: -1;
+    }
+
+
+/* ------------------------ footer ------------------------ */
+    footer {
+        margin-top: 7%;
+        max-width: 900px !important;
+    }
+
+    footer .Journey {
+        margin-bottom: 40px;
+        gap: 20px;
+    }
+
+    footer .Journey .left {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer .Journey .right {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer .Journey .address {
+        font-size: 15px;
+        white-space: nowrap;
+    }
+
+    /* 비눗방울 효과 */
+    .subscribe .circular_fx {
+        top: 12%;
+        left: 17%;
+    }
+
+}
+
+
+/*======================== 550px 이하 ======================== */
+@media screen and (max-width: 550px) {
+    section {
+        height: auto;
+    }
+
+    #intro {
+        height: 100%;
+        padding: 25px;
+    }
+
+    .intro_inner {
+        flex-direction: row;
+    }
+
+    /* 카메라프레임 */
+    /* 카메라 프레임 */
+    .peuleim_line {
+        height: 70px;
+    }
+
+    /* 2. 'ㄱ'자 모양의 선 가로/세로 길이 줄이기 */
+    .topleft span:nth-child(2),
+    .topright span:nth-child(2),
+    .bottomleft span:nth-child(3),
+    .bottomright span:nth-child(3) {
+        width: 50px;
+    }
+
+    .topleft span:nth-child(3),
+    .topright span:nth-child(3),
+    .bottomleft span:nth-child(2),
+    .bottomright span:nth-child(2) {
+        height: 45px;
+    }
+
+    .topleft img {
+        width: 40px;
+        height: auto;
+        top: 20px; 
+        left: 20px;
+    }
+
+    .topright {
+        width: 120px;
+    }
+    .topright p {
+        font-size: 25px;
+        top: 15px; 
+        right: 20px;
+    }
+    .topright p::before {
+        width: 18px;
+        height: 18px;
+        top: 6px; 
+        left: -22px;
+    }
+
+    /* 5. 하단 왼쪽/오른쪽 텍스트(해상도, 타이머) 크기 조정 */
+    .bottomleft p, 
+    .bottomright p {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    
+    .bottomleft {
+        width: 200px;
+    }
+
+    .bottomleft p {
+        bottom: 28px;
+        left: -8px;
+    }
+
+    .bottomright p {
+        right: 18px;
+    }
+
+    .intro_title .sub_title {
+        font-size: 25px;
+    }
+
+    .intro_title .record_box {
+        width: 326px;
+        height: 127px;
+    }
+
+    .intro_title .record_box .handle {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background-color: #ffe678;
+        z-index: 2;
+    }
+
+    .intro_title .record_box img {
+        width: clamp(273px, 30vw, 460px);
+        margin-bottom: 4%;
+    }
+
+    .intro_title .logzip {
+        font-size: 45px;
+        padding: 6px 16px;
+    }
+
+
+    /* 별 */
+    .deco_right .star {
+        top: 15%;
+        left: -55px;
+    }
+
+    /* 달 */
+    .deco_left .moon {
+        width: 130px;
+        margin-right: auto;
+        right: 5%;
+    }
+
+    /* 구름 */
+    .deco_left .cloud_left {
+        top: 6%; left: 0;
+    }
+
+
+/* ------------------------ #aboutme ------------------------ */
+    #aboutme {
+        padding: 10% 0;
+    }
+    #aboutme .inner {
+        max-width: 800px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    /* --------------- 왼쪽 프로필사진 --------------- */
+    .ic_card {
+        max-width: 230px;
+        margin: 0 auto;
+    }
+
+    /* --------------- 오른쪽 텍스트 --------------- */
+    .sketch h2 {
+        font-size: 30px;
+        margin-bottom: 2%;
+        white-space: nowrap;
+    }
+
+    .sketch {
+        text-align: center;
+    }
+
+    .sketch p {
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: -0.8px;
+    }
+
+    .profile {
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .profile h4 {
+        font-size: 18px;
+        margin-bottom: 1%;
+    }
+
+    .profile_record {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .profile_record p {
+        font-size: 16px;
+        line-height: 23px;
+        margin-bottom: 2%;
+    }
+
+    .profile_record span {
+        font-size: 14px;
+        margin-top: 0.5%;
+    }
+
+    .profile_record p .respon {
+        display: block;
+    }
+    .profile_record p .pcver {
+        display: none;
+    }
+
+    .education, .certifications {
+        margin-bottom: 5%;
+    }
+
+
+    /* 스킬 */
+    .skill {
+        text-align: center;
+    }
+    .skill img {
+        width: 50px;
+        height: 50px;
+        margin: 0 2px;
+    }
+
+    /* 언덕 */
+    #aboutme::after {
+        height: 290px;
+    }
+
+    /* 별 bg */
+    #aboutme .star {
+        transform: scale(0.55);
+    }
+
+    #aboutme .left_star {
+        top: 0%;
+        left: 0%;
+    }
+
+    #aboutme .left_star {
+        display: none;
+    }
+
+    #aboutme .right_star {
+        top: 40%;
+        right: 19%;
+    }
+
+    /* 구름 */
+    #aboutme .inner::before {
+        width: 280px;
+        height: 140px;
+        top: -5%;
+        left: 0%;
+    }
+
+    #landing_page .inner::after {
+        top: -12% !important;
+        
+    }
+
+/* ------------------------ header ------------------------ */
+    header {
+        height: auto;
+        padding: 20px 0;
+        margin-bottom: -67px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+/* ------------------------ #coding ------------------------ */
+    #coding {
+        padding: 150px 0;
+    }
+    #coding .inner {
+        transform: scale(1);
+    }
+
+    .coding_swiper {
+        -webkit-mask-image: none;
+        mask-image: none;
+    }
+
+    .coding_work .blurbg .text_box .button a {
+        margin: 0 2px;
+    }
+
+    .thumbnail {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .thumbnail img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .coding_pagination {
+        z-index: 10 !important;
+        bottom: 14% !important;
+    }
+
+    #coding .left_star {
+        left: 0%; bottom: 14%;
+    }
+
+    /* 구름 */
+    #coding::after {
+        width: 240px;
+        height: 121px;
+        top: 10%; left: -11%;
+    }
+
+
+
+/* ------------------------ #landing_page ------------------------ */
+     /* 구름이들 */
+    #landing_page .inner::before {
+        width: 240px;
+        height: 121px;
+        bottom: -35%; left: -12%;
+    }
+    #landing_page .inner::after {
+        width: 240px;
+        height: 121px;
+        top: -30% !important; right: -20%;
+    }
+
+    .landing .thumbnail img {
+        height: 550px;
+    }
+
+/* ------------------------ #app ------------------------ */
+    #app{
+        height: auto !important;
+        padding: 130px 0;
+    }
+
+
+    #app .inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 800px;
+        gap: 40px;
+    }
+
+    /* 텍스트 */
+    .app_txtbox {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        bottom: auto;
+        transform: none;
+        text-align: center;
+        order: 2;
+        margin-top: 150px;
+    }
+
+    .app_txtbox .title h2 {
+        font-size: 50px;
+        margin: 0px 0 18px 0;
+    }
+    .app_txtbox .title .sub_title {
+        font-size: 16px;
+    }
+
+    .app_txtbox .title .sub_txt{
+        font-size: 17px;
+    }
+
+    .overview {
+        text-align: center;
+        margin: 60px 0;
+    }
+
+    .overview p {
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .overview p br {
+        display: block;
+    }
+
+    #app .inner .img_box {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        top: 3%; right: 9%;
+        transform: none;
+        order: 1;
+    }
+
+    #app .inner .img_box img {
+        position: absolute;
+        width: 200px;
+        height: auto;
+        text-align: center;
+    }
+    #app .inner .img_box img:first-child {
+        top: 20%;
+        left: 24%;
+    }
+    #app .inner .img_box img:last-child{
+        right: 8%;
+    }
+
+
+    /* 구름이 */
+    #app .inner::after {
+        width: 280px;
+        height: 139px;
+        right: -11%;
+        bottom: -17%;
+    }
+
+
+/* ------------------------ #cardnews ------------------------ */
+    #cardnews {
+        padding: 130px 0;
+    }
+
+    #cardnews .inner {
+        max-width: 800px;
+    }
+
+    .cardnews_popup .popup_img {
+        max-height: calc(100vh - 180px);
+    }
+
+    .insta_profile .profile_img{
+        width: 130px;
+        height: 130px;
+    }
+
+    /* 프로필정보 */
+    .insta_profile .text_box .name {
+        font-size: 20px;
+        margin-bottom: 2px;
+    }
+
+    .insta_profile .text_box span {
+        margin-right: 5px;
+        font-size: 12px;
+    }
+
+    .insta_profile .text_box .hashtag {
+        margin-top: 2px;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .insta_btn {
+        gap: 5px;
+        margin-bottom: 60px;
+    }
+
+    .insta_btn .edit_btn {
+        padding: 8px 60px;
+        border-radius: 6px;
+    }
+
+    .insta_btn .edit_btn p {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .insta_icon img:nth-child(3) {
+        display: none;
+    }
+
+    .insta_grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        height: 450px;
+    }
+
+    .cardnews_img {
+        height: 160px;
+    }
+
+    /* 구름이 */
+    #cardnews .inner::before {
+        display: none;
+    }
+
+/* --------------- #landing_page / #cardnews --------------- */
+    #landing_page, #branding {
+        padding: 130px 0;
+    }
+
+    .layout_design {
+        height: 550px;
+    }
+    
+    #landing_page .inner,#branding .inner {
+        max-width: 800px;
+        height: 100%;
+    }
+
+    /* 상단바 텍스트 */
+    .landing .topbar p, .branding_logo .topbar p {
+        font-size: 20px;
+    }
+
+    .landing .blurbg, .branding_logo .blurbg {
+        height: 91%;
+    }
+
+    /* 메인 타이틀 */
+    .landing .blurbg .text_box p,
+    .branding_logo .blurbg .text_box p {
+        font-size: 30px;
+        margin-bottom: 6px;
+    }
+
+    .landing .blurbg .text_box span, .branding_logo .blurbg .text_box span {
+        font-size: 16px;
+    }
+
+    .landing .blurbg .text_box .button button, .branding_logo .blurbg .text_box .button button {
+        font-size: 17px;
+    }
+
+    
+
+    /* 구름쓰 */
+        #branding .inner::after {
+        width: 300px;
+        height: 150px;
+        top: -38%;
+        right: -15%;
+    }
+
+/* ------------------------ #design ------------------------ */
+    #design {
+        /* height: auto; */
+        padding-top: 130px;
+    }
+
+    #design .inner {
+        max-width: 600px;
+        padding-bottom: 80px;
+    }
+    
+    .design_work {
+        width: 450px;
+        height: 230px;
+    }
+
+    .design_work .topbar {
+        height: 30px;
+        padding: 0 10px;
+    }
+
+    .design_work .topbar p {
+        font-size: 8px;
+    }
+
+    .design_work .topbar .icon_box {
+        gap: 5px;
+    }
+
+    .design_work .topbar .icon_box img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .design_work .blurbg .text_box p {
+        font-size: 20px;
+    }
+
+    .design_work .blurbg .text_box span {
+        font-size: 10px;
+    }
+
+    .design_work .blurbg {
+        top: 30px;
+        height: 200px;
+    }
+
+    /* 프로세스 버튼 */
+    .design_work .blurbg .text_box .design_button {
+    margin-top: 20px;
+    }
+    .design_work .blurbg .text_box .SalesPage {
+        font-size: 10px;
+    }
+
+    #design .inner .content_left, #design .inner .content_right {
+        justify-content: center;
+            gap: 15px;
+    }
+
+    #design .inner .content_right {
+        margin-top: 3%;
+    }
+
+    /* 비눗방울 */
+    .circular_fx {
+        top: 4%;
+        right: 2%;
+    }
+
+
+    /* 왼구르미 */
+    #design .inner::before {
+        top: -30%;
+        left: -11%;
+        width: 250px;
+        height: 126px;
+    }
+
+    /* 태양 */
+    .sunbg {
+        width: 150px;
+        height: 150px;
+        right: 4%;
+        z-index: -1;
+    }
+
+    /* 오른구르미 */
+    #design .inner::after {
+        width: 250px;
+        height: 126px;
+        right: -29%;
+        z-index: -1;
+    }
+
+
+/* ------------------------ footer ------------------------ */
+    footer {
+        margin-top: 7%;
+        max-width: 900px !important;
+    }
+
+    footer .Journey {
+        margin-bottom: 40px;
+        gap: 20px;
+    }
+
+    footer .Journey .left {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer .Journey .right {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer .Journey .address {
+        font-size: 11px;
+        white-space: nowrap;
+    }
+
+    /* 버튼 */
+    footer button {
+        font-size: 16px;
+        padding: 12px 50px;
+    }
+
+    #design .copy {
+        font-size: 14px;
+    }
+}
+
+
+/*======================== 440px 이하 ======================== */
+@media screen and (max-width: 440px) {
+    section {
+        height: auto;
+    }
+
+    #intro {
+        height: 100%;
+        padding: 20px;
+    }
+
+    .intro_inner {
+        flex-direction: row;
+    }
+
+    /* 카메라프레임 */
+    .peuleim_line {
+        height: 70px;
+    }
+
+    /* 2. 'ㄱ'자 모양의 선 가로/세로 길이 줄이기 */
+    .topleft span:nth-child(2),
+    .topright span:nth-child(2),
+    .bottomleft span:nth-child(3),
+    .bottomright span:nth-child(3) {
+        width: 50px;
+    }
+
+    .topleft span:nth-child(3),
+    .topright span:nth-child(3),
+    .bottomleft span:nth-child(2),
+    .bottomright span:nth-child(2) {
+        height: 45px;
+    }
+
+    .topleft img {
+        width: 40px;
+        height: auto;
+        top: 20px; 
+        left: 20px;
+    }
+
+    .topright {
+        width: 120px;
+    }
+    .topright p {
+        font-size: 25px;
+        top: 15px; 
+        right: 20px;
+    }
+    .topright p::before {
+        width: 18px;
+        height: 18px;
+        top: 6px; 
+        left: -22px;
+    }
+
+    /* 5. 하단 왼쪽/오른쪽 텍스트(해상도, 타이머) 크기 조정 */
+    .bottomleft p, 
+    .bottomright p {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    
+    .bottomleft {
+        width: 200px;
+    }
+
+    .bottomleft p {
+        bottom: 28px;
+        left: -8px;
+    }
+
+    .bottomright p {
+        right: 18px;
+    }
+
+    .intro_title .sub_title {
+        font-size: 23px;
+    }
+
+    .intro_title .record_box {
+        width: 300px;
+        height: 127px;
+    }
+
+    .intro_title .record_box .handle {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background-color: #ffe678;
+        z-index: 2;
+    }
+
+    .intro_title .record_box img {
+        width: clamp(273px, 30vw, 460px);
+        margin-bottom: 4%;
+    }
+
+    .intro_title .logzip {
+        font-size: 45px;
+        padding: 6px 16px;
+    }
+
+
+    /* 별 */
+    .deco_right .star {
+        top: 15%;
+        left: -55px;
+    }
+
+    /* 달 */
+    .deco_left .moon {
+        width: 130px;
+        margin-right: auto;
+        right: 5%;
+    }
+
+    /* 구름 */
+    .deco_left .cloud_left {
+        top: 6%; left: 0;
+    }
+
+
+/* ------------------------ #aboutme ------------------------ */
+    #aboutme {
+        padding: 10% 0;
+    }
+    #aboutme .inner {
+        max-width: 300px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    /* --------------- 왼쪽 프로필사진 --------------- */
+    .ic_card {
+        max-width: 230px;
+        margin: 0 auto;
+    }
+
+    /* --------------- 오른쪽 텍스트 --------------- */
+    .sketch h2 {
+        font-size: 28px;
+        margin-bottom: 1%;
+        white-space: nowrap;
+    }
+
+    .sketch {
+        text-align: center;
+    }
+
+    .sketch p {
+        font-size: 16px;
+        line-height: 23px;
+        letter-spacing: -0.8px;
+        padding: 10px;
+    }
+
+    .profile {
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .profile h4 {
+        font-size: 18px;
+        margin-bottom: 1%;
+    }
+
+    .profile_record {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .profile_record p {
+        font-size: 16px;
+        line-height: 23px;
+        margin-bottom: 2%;
+    }
+
+    .profile_record span {
+        font-size: 14px;
+        margin-top: 0.5%;
+    }
+
+    .profile_record p .respon {
+        display: block;
+    }
+    .profile_record p .pcver {
+        display: none;
+    }
+
+    .education, .certifications {
+        margin-bottom: 5%;
+    }
+
+
+    /* 스킬 */
+    .skill {
+        text-align: center;
+    }
+    .skill img {
+        width: 45px;
+        height: 45px;
+        margin: 0 2px;
+    }
+
+    /* 언덕 */
+    #aboutme::after {
+        height: 290px;
+    }
+
+    /* 별 bg */
+    #aboutme .star {
+        transform: scale(0.55);
+    }
+
+    #aboutme .left_star {
+        top: 0%;
+        left: 0%;
+    }
+
+    #aboutme .left_star {
+        display: none;
+    }
+
+    #aboutme .right_star {
+        top: 40%;
+        right: 19%;
+    }
+
+    /* 구름 */
+    #aboutme .inner::before {
+        width: 240px;
+        height: 120px;
+        top: -4%;
+        left: -25%;
+    }
+
+    #landing_page .inner::after {
+        top: -12% !important;
+        
+    }
+
+/* ------------------------ header ------------------------ */
+    header {
+        height: auto;
+        padding: 20px 0;
+        margin-bottom: -68px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+/* ------------------------ #coding ------------------------ */
+    #coding {
+        padding: 150px 0;
+    }
+    #coding .inner {
+        transform: scale(0.95);
+    }
+
+    .coding_swiper {
+        -webkit-mask-image: none;
+        mask-image: none;
+    }
+
+    .swiper-slide {
+        height: 450px;
+    }
+
+    .coding_work {
+        height: 450px;
+    }
+
+    .coding_work .topbar p {
+        font-size: 16PX;
+    }
+
+    .coding_work .topbar .icon_box {
+        gap: 10px;
+    }
+
+    .coding_work .topbar .icon_box img {
+       width: 14px;
+       height: 14px; 
+    }
+
+    .coding_work .blurbg {
+        height: 400px;
+    }
+
+    .coding_work .blurbg .text_box p {
+        font-size: 33PX;
+    }
+
+    .coding_work .blurbg .text_box .button a {
+        margin: 0 2px;
+    }
+
+    .thumbnail {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .thumbnail img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .coding_pagination {
+        z-index: 10 !important;
+        bottom: 20% !important;
+    }
+
+    #coding .left_star {
+        left: 0%; bottom: 14%;
+    }
+
+    /* 구름 */
+    #coding::after {
+        width: 240px;
+        height: 121px;
+        top: 17%; left: -11%;
+    }
+
+
+
+/* ------------------------ #landing_page ------------------------ */
+     /* 구름이들 */
+    #landing_page .inner::before {
+        width: 240px;
+        height: 121px;
+        bottom: -35%; left: -12%;
+    }
+    #landing_page .inner::after {
+        width: 240px;
+        height: 121px;
+        top: -30% !important; right: -20%;
+    }
+
+    /* 브랜딩 썸네일 */
+    .branding_logo .thumbnail img {
+        height: 400px;
+    }
+
+/* ------------------------ #app ------------------------ */
+    #app{
+        height: auto !important;
+        padding: 130px 0;
+    }
+
+
+    #app .inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 800px;
+        gap: 40px;
+    }
+
+    /* 텍스트 */
+    .app_txtbox {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        bottom: auto;
+        transform: none;
+        text-align: center;
+        order: 2;
+        margin-top: 150px;
+    }
+
+    .app_txtbox .title h2 {
+        font-size: 50px;
+        margin: 0px 0 18px 0;
+    }
+    .app_txtbox .title .sub_title {
+        font-size: 16px;
+    }
+
+    .app_txtbox .title .sub_txt{
+        font-size: 17px;
+    }
+
+    .overview {
+        text-align: center;
+        margin: 60px 0;
+    }
+
+    .overview p {
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .overview p br {
+        display: block;
+    }
+
+    #app .inner .img_box {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        top: 3%; right: 9%;
+        transform: none;
+        order: 1;
+    }
+
+    #app .inner .img_box img {
+        position: absolute;
+        width: 200px;
+        height: auto;
+        text-align: center;
+    }
+    #app .inner .img_box img:first-child {
+        top: 20%;
+        left: 10%;
+    }
+    #app .inner .img_box img:last-child{
+        right: -7%;
+    }
+
+
+    /* 구름이 */
+    #app .inner::after {
+        width: 280px;
+        height: 139px;
+        right: -11%;
+        bottom: -17%;
+    }
+
+
+/* ------------------------ #cardnews ------------------------ */
+    #cardnews {
+        padding: 130px 0;
+    }
+
+    .cardnews_popup .popup_img {
+        max-height: calc(100vh - 180px);
+    }
+
+    .insta_profile .profile_img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .cardnews_popup .popup_close {
+        top: 4%;
+        right: 4%;
+        padding: 6px 12px;
+        font-size: 20px;
+    }
+
+    /* 프로필정보 */
+    .insta_profile {
+        gap: 11px;
+    }
+
+    .insta_profile .profile_img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .insta_profile .text_box .name {
+        font-size: 20px;
+        margin-bottom: 2px;
+    }
+
+    .insta_profile .text_box span {
+        margin-right: 5px;
+        font-size: 12px;
+    }
+
+    .insta_profile .text_box .hashtag {
+        margin-top: 2px;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .insta_btn {
+        gap: 5px;
+        margin-bottom: 60px;
+    }
+
+    .insta_btn .edit_btn {
+        padding: 10px 60px;
+        border-radius: 6px;
+    }
+
+    .insta_btn .edit_btn p {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .insta_grid {
+        height: 380px;
+        gap: 3px;
+    }
+
+    .cardnews_img {
+        height: 122px;
+    }
+
+    /* 구름이 */
+    #cardnews .inner::before {
+        width: 300px;
+        height: 150px;
+        top: 38%; left: -17%;
+    }
+
+    #app .inner::after {
+        width: 240px;
+        height: 119px;
+        right: -21%;
+        bottom: -22%;
+    }
+
+/* --------------- #landing_page / #cardnews --------------- */
+    #landing_page, #branding {
+        padding: 130px 0;
+    }
+
+    .layout_design {
+        height: 427px;
+    }
+    
+    #landing_page .inner,#branding .inner {
+        max-width: 800px;
+        height: 100%;
+    }
+
+    /* 상단바 텍스트 */
+    .landing .topbar p, .branding_logo .topbar p {
+        font-size: 18px;
+    }
+
+    .landing .blurbg, .branding_logo .blurbg {
+        height: 91%;
+    }
+
+    .branding_logo .topbar .icon_box, .landing .topbar .icon_box {
+        gap: 10px;
+    }
+
+    .branding_logo .topbar .icon_box img, .landing .topbar .icon_box img {
+        width: 16px;
+        height: 16px;
+    }
+
+    /* 메인 타이틀 */
+    .landing .blurbg .text_box p,
+    .branding_logo .blurbg .text_box p {
+        font-size: 30px;
+        margin-bottom: 6px;
+    }
+
+    .landing .blurbg .text_box span, .branding_logo .blurbg .text_box span {
+        font-size: 16px;
+    }
+
+    .landing .blurbg .text_box .button button, .branding_logo .blurbg .text_box .button button {
+        font-size: 17px;
+    }
+
+    
+
+    /* 구름쓰 */
+        #branding .inner::after {
+        width: 250px;
+        height: 125px;
+        top: -38%;
+        right: -25%;
+    }
+
+/* ------------------------ #design ------------------------ */
+    #design {
+        /* height: auto; */
+        padding-top: 130px;
+    }
+
+    .salespage_popup .salespage_close {
+        top: 15px;
+        padding: 2px 8px;
+        font-size: 20px;
+    }
+
+    #design .inner {
+        max-width: 600px;
+        padding-bottom: 80px;
+    }
+    
+    .design_work {
+        width: 450px;
+        height: 200px;
+    }
+
+    .design_work .topbar {
+        height: 30px;
+        padding: 0 8px;
+    }
+
+    .design_work .topbar p {
+        font-size: 8px;
+    }
+
+    .design_work .topbar .icon_box {
+        gap: 3px;
+    }
+
+    .design_work .topbar .icon_box img {
+        width: 8px;
+        height: 8px;
+    }
+
+    .design_work .blurbg .text_box p {
+        font-size: 18px;
+    }
+
+    .design_work .blurbg .text_box span {
+        font-size: 9px;
+    }
+
+    .design_work .blurbg {
+        top: 30px;
+        height: 180px;
+    }
+
+    /* 프로세스 버튼 */
+    .design_work .blurbg .text_box .design_button {
+    margin-top: 10px;
+    }
+    .design_work .blurbg .text_box .SalesPage {
+        font-size: 9px;
+        padding: 5px 12px;
+    }
+
+    #design .inner .content_left, #design .inner .content_right {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #design .inner .content_right {
+        margin-top: 3%;
+    }
+
+    /* 비눗방울 */
+    .circular_fx {
+        top: 4%;
+        right: 2%;
+    }
+
+
+    /* 왼구르미 */
+    #design .inner::before {
+        top: -30%;
+        left: -20%;
+        width: 230px;
+        height: 116px;
+    }
+
+    /* 태양 */
+    .sunbg {
+        width: 150px;
+        height: 150px;
+        right: 4%;
+        z-index: -1;
+    }
+
+    /* 오른구르미 */
+    #design .inner::after {
+        width: 230px;
+        height: 116px;
+        right: -29%;
+        z-index: -1;
+    }
+
+
+/* ------------------------ footer ------------------------ */
+    footer {
+        margin-top: 7%;
+        max-width: 900px !important;
+    }
+
+    footer .Journey {
+        margin-bottom: 40px;
+        gap: 12px;
+    }
+
+    footer .Journey .left {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    footer .Journey .right {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    footer .Journey .address {
+        font-size: 10px;
+        white-space: nowrap;
+    }
+
+    /* 버튼 */
+    footer button {
+        font-size: 14px;
+        padding: 12px 50px;
+    }
+
+    #design .copy {
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    /* 비눗방울 효과 */
+    .subscribe .circular_fx {
+        top: 12%;
+        left: 10%;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    .overview p {
+        font-size: 15px;
+    }
+
+    .insta_profile .profile_img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .insta_btn .edit_btn {
+        padding: 10px 56px;
+    }
+
+    .content_right .text_box .design_button a {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .intro_title .record_box {
+        width: 250px;
+        height: 116px;
+    }
+
+    .intro_title .record_box img {
+        width: clamp(220px, 30vw, 460px);
+        margin-bottom: 4%;
+    }
+
+    .sketch h2 {
+        font-size: 26px;
+    }
+
+    .sketch p {
+        font-size: 15px;
+    }
+
+    .skill img {
+        width: 40px;
+        height: 40px;
+        margin: 0 1px;
+    }
+
+
+    #aboutme .right_star {
+        top: 44%;
+        right: 26%;
+    }
+
+    /* 별 */
+    .deco_right .star {
+        top: 3%;
+        left: -46px;
+        transform: scale(0.5);
+    }
+
+    
+    #coding {
+       padding: 130px 0 50px;
+    }
+
+    .swiper-slide {
+        height: 400px !important;
+    }
+
+    .coding_work {
+        height: 400px;
+    }
+
+    .coding_work .topbar {
+        padding: 0 11px;
+    }
+
+    .coding_work .topbar p {
+        font-size: 15PX;
+    }
+
+    .coding_work .blurbg {
+        height: 350px;
+    }
+
+    .coding_pagination {
+        bottom: 17% !important;
+    }
+
+    #coding::after {
+        width: 200px;
+        height: 100px;
+        top: 13%;
+        left: -13%;
+    }
+
+    #landing_page .inner::before {
+        width: 200px;
+        height: 100px;
+    }
+
+    .landing .thumbnail img {
+        height: 472px;
+    }
+
+    #landing_page .inner::after {
+        width: 200px;
+        height: 100px;
+        top: -36% !important;
+        right: -25%;
+    }
+
+
+    #app {
+        padding: 130px 0 100px;
+    }
+
+    #app .inner .img_box {
+        transform: scale(0.85);
+    }
+
+    #app .inner .img_box img:last-child {
+        right: -20%;
+    }
+    #app .inner .img_box img:first-child {
+        top: 23%;
+        left: 1%;
+    }
+
+    .app_txtbox .title h2 {
+        font-size: 48px;
+    }
+
+    .app_txtbox .title .sub_title {
+        font-size: 15px;
+    }
+
+    .app_txtbox .title .sub_txt {
+        font-size: 15px;
+    }
+
+    .overview h4 {
+        font-size: 18px;
+    }
+    .overview p {
+        font-size: 15px;
+        letter-spacing: -0.2px;
+        line-height: 23px;
+    }
+
+    #app .inner::after {
+        width: 200px;
+        height: 100px;
+        bottom: -17%;
+    }
+
+
+    #cardnews {
+        padding: 130px 0px 50px;
+    }
+
+    .cardnews_popup .popup_close {
+        padding: 2px 8px;
+    }
+
+    .insta_profile {
+        padding: 0 10px;
+    }
+
+
+    .insta_profile .profile_img {
+        width: 64px;
+        height: 64px;
+        flex-shrink: 0;
+    }
+
+    .insta_btn .edit_btn {
+        padding: 8px 40px;
+        border-radius: 6px;
+    }
+
+    .insta_grid {
+        height: auto;
+        max-height: none;
+        overflow-y: visible;
+    }
+    .insta_grid::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    .cardnews_img {
+        height: 107px;
+    }
+    .cardnews_img::before {
+        font-size: 16px;
+    }
+
+    /* --------------- #landing_page / #cardnews --------------- */
+    #landing_page, #branding {
+        padding: 130px 0 50px;
+    }
+
+    .layout_design {
+        height: 380px;
+    }
+    
+    #landing_page .inner,#branding .inner {
+        max-width: 800px;
+        height: 100%;
+    }
+
+    /* 상단바 */
+    .landing .topbar, .branding_logo .topbar {
+        height: 45px;
+    }
+
+    .landing .topbar p, .branding_logo .topbar p {
+        font-size: 16px;
+    }
+
+    .landing .blurbg, .branding_logo .blurbg {
+        top: 45px;
+        height: 89%;
+    }
+
+    .branding_logo .topbar .icon_box, .landing .topbar .icon_box {
+        gap: 8px;
+    }
+
+    .branding_logo .topbar .icon_box img, .landing .topbar .icon_box img {
+        width: 16px;
+        height: 16px;
+    }
+
+    /* 메인 타이틀 */
+    .landing .blurbg .text_box p,
+    .branding_logo .blurbg .text_box p {
+        font-size: 25px;
+        margin-bottom: 6px;
+    }
+
+    .landing .blurbg .text_box span, .branding_logo .blurbg .text_box span {
+        font-size: 14px;
+    }
+
+    .landing .blurbg .text_box .button button, .branding_logo .blurbg .text_box .button button {
+        font-size: 15px;
+    }
+
+    /* 브랜딩 썸네일 */
+    .branding_logo .thumbnail img {
+        height: 350px;
+    }
+
+    #branding .inner::after {
+        width: 200px;
+        height: 100px;
+    }
+
+    /* ------------------------ #design ------------------------ */
+    #design {
+        padding-top: 130px;
+    }
+
+    .salespage_popup .salespage_close {
+        top: 15px;
+        padding: 2px 8px;
+        font-size: 20px;
+    }
+
+    #design .inner {
+        max-width: 600px;
+        padding-bottom: 80px;
+    }
+    
+    .design_work {
+        height: 160px;
+    }
+
+    .design_work .topbar {
+        height: 25px;
+        padding: 0 5px;
+    }
+
+    .design_work .topbar p {
+        font-size: 7px;
+        letter-spacing: -0.3px;
+    }
+
+    .design_work .topbar .icon_box {
+        gap: 3px;
+    }
+
+    .design_work .topbar .icon_box img {
+        width: 6px;
+        height: 6px;
+    }
+
+    .design_work .blurbg .text_box p {
+        font-size: 16px;
+        line-height: 8px;
+    }
+
+    .design_work .blurbg .text_box span {
+        font-size: 8px;
+    }
+
+    .design_work .blurbg {
+        top: 25px;
+        height: 146px;
+    }
+
+    /* 프로세스 버튼 */
+    .design_work .blurbg .text_box .design_button {
+        margin-top: 8px;
+    }
+    .design_work .blurbg .text_box .SalesPage {
+        font-size: 8px;
+        padding: 4px 10px;
+    }
+
+    #design .inner .content_left, #design .inner .content_right {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #design .inner .content_right {
+        margin-top: 3%;
+    }
+
+    /* 비눗방울 */
+    .circular_fx {
+        top: 4%;
+        right: 2%;
+    }
+
+
+    /* 왼구르미 */
+    #design .inner::before {
+        top: -30%;
+        left: -20%;
+        width: 200px;
+        height: 100px;
+    }
+
+    /* 태양 */
+    .sunbg {
+        width: 130px;
+        height: 130px;
+        right: 4%;
+        z-index: -1;
+    }
+
+    /* 오른구르미 */
+    #design .inner::after {
+        width: 200px;
+        height: 100px;
+        right: -29%;
+        z-index: -1;
+    }
+
+
+/* ------------------------ footer ------------------------ */
+    footer {
+        margin-top: 7%;
+        max-width: 900px !important;
+    }
+
+    footer .Journey {
+        margin-bottom: 40px;
+        gap: 12px;
+    }
+
+    footer .Journey .left {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    footer .Journey .right {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    footer .Journey .address {
+        font-size: 8px;
+        font-weight: 600;
+        white-space: nowrap;
+        padding: 6px 11px;
+    }
+
+    /* 버튼 */
+    footer button {
+        font-size: 14px;
+        padding: 10px 45px;
+    }
+
+    #design .copy {
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .overview p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+}

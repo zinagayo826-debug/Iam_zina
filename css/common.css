@@ -1,0 +1,347 @@
+@charset "utf-8";
+
+/* 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+:root {
+/* Color styles */
+--intro_title_color: rgba(255, 234, 116, 1);
+--point_color01: rgba(255, 191, 0, 1);
+--point_color02: rgba(255, 111, 238, 1);
+--point_color03: rgba(164, 232, 0, 1);
+--point_color04: rgba(244, 245, 248, 1);
+--point_color05: rgba(48, 110, 223, 1);
+--point_color06: rgba(51, 51, 51, 1);
+
+/* Text-size styles */
+--intro_my_space38: 38px;
+--intro_log_zip: 90px;
+--intro_bottom_font27: 27px;
+--intro_rec35: 35px;
+--about_app_main_title: 65px;
+--about_sub_title: 26px;
+--about_main_text: 25px;
+--about_app_sub_txet: 20px;
+--mini_txet: 15px;
+--header_scene: 25px;
+--header_ul: 18px;
+--coding_design_s_title: 17px;
+--coding_design_main_title: 40px;
+--coding_design_sub_title: 13px;
+--landing_branding_s_title26: 26px;
+--landing_branding_main_title: 53px;
+--landing_branding_sub_title: 22px;
+--cardnews_insta_name: 25px;
+--cardnews_insta_subtxt: 16px;
+--btn_18px: 20px;
+--btn_15px: 15px;
+--btn_footer: 20px;
+--footer_copy: 16px;
+
+/* Effect styles */
+--drop_shadow01:  0px 3px 8px rgba(96, 78, 17, 0.4);
+--drop_shadow02:  0px 3px 8px rgba(44, 48, 54, 0.4);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #333;
+    font-family: Pretendard;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+}
+
+/* ======================= header ======================= */
+header {
+    width: 100%;
+    height: 80px;
+    padding: 0 50px;
+    border-bottom: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    margin-bottom: -80px;
+    background: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(3px);
+}
+
+header .scene {
+    font-family: "JetBrains Mono";
+    font-size: var(--header_scene);
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+nav ul {
+    display: flex;
+    gap: 12px;
+}
+
+nav ul a {
+    display: block;
+    padding: 8px 15px;
+    border: 1px solid #333;
+    border-radius: 50px;
+    font-size: var(--header_ul);
+    font-weight: bold;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+/* li 호버 효과 */
+nav li a:hover {
+    background-color: var(--point_color02);
+    border: 1px solid var(--point_color02);
+}
+
+/* 해당 영역에 들어가면 색 바뀌는 효과 */
+header nav a.active {
+    background-color: var(--point_color02);
+    border-color: var(--point_color02);
+}
+
+
+/* ======================= section ======================= */
+section {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow-x: clip;
+}
+
+/* 노이즈효과 */
+section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+      
+    /* baseFrequency: 노이즈 입자 조절 */
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='5.5' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+      
+    /* 노이즈 투명도 */
+    opacity: 0.8;
+    /* 블랜드모드 */        
+    mix-blend-mode: overlay;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* section 내부 컨텐츠가 노이즈 필터 위로 오게 설정  */
+section > * {
+    z-index: 2;
+}
+
+.inner {
+    width: calc(100% - 48px);
+    max-width: 1200px; /* 네 작업물 영역 기준 */
+    margin: 0 auto;
+    position: relative;
+}
+
+/* 별 */
+.star img {
+    position: absolute;
+    filter: drop-shadow(0 0 6px #ffffff);
+}
+
+/* 작은별 */
+.star .star_oa {
+    width: 33px;
+    height: 42px;
+    bottom: 30%;
+    animation: twinkle 2.5s infinite ease-in-out alternate;
+}
+
+/* 큰별 */
+.star .star_ob {
+    left: 60px;
+    animation-delay: 0.8s;
+    animation: twinkle 2s infinite ease-in-out alternate;
+}
+@keyframes twinkle {
+    0% { opacity: 0.3; transform: scale(0.8); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+/* 왼구름 */
+.cloud_left {
+    width: 345px;
+    height: 173px;
+    position: absolute;
+    padding-left: 10%;
+    top: 24%;
+    z-index: 2;
+    animation: float 2s ease-in-out infinite alternate;
+    /* 모바일/사파리 등에서 떨림 방지*/
+    will-change: transform;
+}
+@keyframes float {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-10px); 
+      }
+}
+
+
+/* 오른구름 */
+.cloud_right {
+    position: absolute;
+    width: 290px;
+    height: 130px;
+    bottom: -5%; left: 10%;
+    animation: float 2s ease-out infinite -2s alternate;
+    /* 모바일/사파리 등에서 떨림 방지*/
+    will-change: transform;
+}
+@keyframes float {
+      0% {
+        transform: translateY(-15px);
+      }
+      100% {
+        transform: translateY(0); 
+      }
+}
+
+/* 비눗방울 효과 */
+.circular_fx {
+    position: absolute;
+    width: 85px;
+    height: auto;
+    top: 7%; right: 11%;
+}
+
+/* 작은 방울 */
+.circular_fx .bg {
+    width: 23px;
+    height: 23px;
+    background-color: #fff;
+    border-radius: 50px;
+    animation: effect01 3s ease-out infinite;
+}
+@keyframes effect01 {
+    0% {
+        transform: scale(0) translateY(20px);
+        opacity: 1;
+      }
+      80% {
+        opacity: 0.8; 
+      }
+      100% {
+        transform: scale(1) translateY(-30px); 
+        opacity: 0; 
+      }
+}
+
+/* 큰 방울 */
+.circular_fx .outline {
+    width: 30px;
+    height: 30px;
+    border:2px solid #fff;
+    border-radius: 50px;
+    margin: 38px 0 0 46px;
+    animation: effect02 3s ease-out infinite -3.5s;
+}
+@keyframes effect02 {
+    0% {
+        transform: scale(0.3) translateY(20px);
+        opacity: 1;
+      }
+      80% {
+        opacity: 0.8; 
+      }
+      100% {
+        transform: scale(1) translateY(-30px); 
+        opacity: 0; 
+      }
+}
